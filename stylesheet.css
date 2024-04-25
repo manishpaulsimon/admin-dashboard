@@ -7,8 +7,8 @@ body {
     display: grid;
     grid-template-columns: 300px 1fr 1fr 1fr;
     grid-template-rows: auto 1fr 1fr auto;
-    border: 2px solid blue;
-    height: 100vh;
+    border: 2px solid #1f2937;
+    height: auto;
     margin: 0;
     padding: 0;
 
@@ -23,8 +23,7 @@ body {
 
 .sidebar {
     grid-area: sidebar;
-    border: 1px solid red;
-    background-color: #1992D4;
+    background-color: #1f2937;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -42,7 +41,6 @@ body {
 }
 
 .header {
-    border: 1px solid rgb(88, 174, 6);
     grid-area: header;
     grid-auto-rows: 20px;  
     grid-template-columns: repeat(3,1fr);
@@ -61,8 +59,15 @@ body {
     gap: 20px;
     align-items: center;
     padding-left: 30px;
-    border: 1px solid rgb(88, 174, 6);
+    padding-right: 100px;
 
+}
+
+.column1 input[type="text"] {
+    flex-grow: 1; /* Allows the input box to take up any remaining space */
+    padding: 3px; /* Optional: for better text visibility */
+    box-sizing: border-box; /* Ensures padding doesn't affect the overall specified width */
+    border-radius: 10px;
 }
 
 .column2 {
@@ -70,7 +75,6 @@ body {
     display: flex;
     gap: 20px;
     align-items: center;
-    border: 1px solid rgb(88, 174, 6);
 
 }
 
@@ -79,12 +83,10 @@ body {
     display: glex;
     gap: 20px;
     padding-left: 30px;
-    border: 1px solid rgb(88, 174, 6);
 }
 
 .column4 {
     grid-area: rightdown;
-    border: 1px solid rgb(88, 174, 6);
 }
 
 
@@ -101,9 +103,8 @@ body {
 
 #projects {
     grid-area: main;
-    border: 1px solid rgb(88, 174, 6);
 
-    background-color: #f9fafb;
+    background-color: #f1f5f9;
     padding-left: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;  /* This divides the space into two equal columns */
@@ -121,7 +122,6 @@ body {
 
 .col1 {
     grid-column: 1;
-    border: 1px solid rgb(88, 174, 6);
 
 }
 
@@ -131,13 +131,24 @@ body {
 
 #announcements {
     grid-area: announcements;
-    background-color: rgb(159, 159, 133);
-    padding: 30px;
+    background-color: #f1f5f9;
 
+    padding-left: 30px;
+
+}
+
+.announcement {
+    font-size: 14px;
+    padding: 20px;
+    background-color: #cbd5e1;
+    box-shadow: darkgray;
+    margin-top: 20px;
+    border-radius: 10px;
+ 
 }
 
 #trending {
     grid-area: trending;
-    background-color: rgb(189, 189, 189);
+    background-color: #f1f5f9;
     padding: 30px;
 }
