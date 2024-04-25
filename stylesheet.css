@@ -21,6 +21,8 @@ body {
         "sidebar main main trending"
 }
 
+
+
 .sidebar {
     grid-area: sidebar;
     background-color: #1f2937;
@@ -46,11 +48,24 @@ body {
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 50px 50px;
     align-items: center; /* Center items vertically */
-    background-color: aliceblue;
+    background-color: #fafafa;
     display: grid;
+    padding-bottom: 30px;
     grid-template-areas:
         "leftup leftup rightup"
         "leftdown leftdown rightdown"
+}
+
+
+.header-buttons {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right:
+    margin-left: 20px;
+    color: white;
+    background-color: #1f2937;
+    border-radius: 10px;
+    
 }
 
 .column1 {
@@ -80,10 +95,11 @@ body {
 
 .column3 {
     grid-area: leftdown;
-    display: glex;
+    display: flex;
+    align-items: center;
     gap: 20px;
     padding-left: 30px;
-}
+    }
 
 .column4 {
     grid-area: rightdown;
@@ -93,6 +109,13 @@ body {
 .icons {
     max-height: 30px;
     width: auto;
+}
+
+.icons-logo {
+    max-height: 50px;
+    width: auto;
+    border-radius: 50%;
+
 }
 
 .icons-white {
